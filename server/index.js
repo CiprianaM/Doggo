@@ -1,16 +1,24 @@
-const express = require ('express');
+const express = require("express");
 const app = express();
-const bodyParser = require ('body-parser');
-const cors = require('cors');
+const cors = require("cors");
+ const morgan = require('morgan')
 
+const db = require("./models");
+const router = require("./router");
 const connection = {
-  hostname: 'localhost',
-  port: 3000
-}
+  hostname: "localhost",
+  port: 3002
+};
 
-const router = require ('./router');
-
-app.use(bodyParser.json());
+app.use(morgan("combi"));
 app.use(cors());
+
+app.use(express.json()); //Used to parse JSON bodies
 app.use(router);
-app.listen(()=>console.log(`Server running at ${connection.hostname}:${connection.port}`));
+
+db.sequelize.sync().then(res => {
+  console.log("DB connected!");
+  app.listen(3002,() =>
+    console.log(`Server running at ${connection.hostname}:${connection.port}`)
+  );
+});

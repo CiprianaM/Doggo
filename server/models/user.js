@@ -1,19 +1,13 @@
-require("../db");
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-const userSchema = new Schema({
-  img: { type: String, required: true },
-  name: { type: String, required: true },
-  email: { type: String, required: true },
-  password: { type: String, required: true },
-  description: { type: String, required: true },
-  age: { type : Number, required: false },
-  gender: { type: String, required: true },
-  phoneNo: { type: String, required: false },
-  location: { type: String, required: true },
-  showMe: { type: Boolean, required: false }
-});
-
-const myModel = mongoose.model("User", userSchema);
-
-module.exports = myModel;
+'use strict';
+module.exports = (sequelize, DataTypes) => {
+  const User = sequelize.define('User', {
+    name: DataTypes.STRING,
+    picture: DataTypes.STRING,
+    description: DataTypes.STRING,
+    gender: DataTypes.STRING
+  }, {});
+  User.associate = function(models) {
+    // associations can be defined here
+  };
+  return User;
+};

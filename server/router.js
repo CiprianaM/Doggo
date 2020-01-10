@@ -1,9 +1,13 @@
 const router = require ('express').Router();
-const {getPicture} = require ('./controllers/getPostPic');
+// const conf = require('./config.js');
+const userController = require ('./controllers/users');
+const writeInFile = require ('./controllers/writeJSON');
 
-// console.log('test');
-router.get('/pupper', getPicture);
-router.get('/profile', getPicture);
+router.get('/pupper', userController.getAllUsers);
+router.post('/profile', userController.createNewUser);
+router.delete('/pupper/:id', userController.deleteUser);
+router.get('/temp', writeInFile);
+
 //sign in? create profile?
 // router.post('/signup', createProfile);
 // router.delete('/topics/:id', deleteTopic);

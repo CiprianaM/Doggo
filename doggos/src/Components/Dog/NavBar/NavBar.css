@@ -1,0 +1,6 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0rem 0.5rem 1rem rgba(#000, 0.2);
+}
