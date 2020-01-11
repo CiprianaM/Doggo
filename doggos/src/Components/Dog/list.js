@@ -87,4 +87,11 @@ const dogList =
       }
   ];
 
+//   https://images.dog.ceo/breeds/dachshund/dachshund-7.jpg
+//   https://images.dog.ceo/breeds/lhasa/n02098413_1137.jpg
+//   https://images.dog.ceo/breeds/briard/n02105251_2591.jpg
+//   https://images.dog.ceo/breeds/stbernard/n02109525_7024.jpg
+//   https://images.dog.ceo/breeds/terrier-silky/n02097658_646.jpg
+//   https://images.dog.ceo/breeds/cotondetulear/100_2013.jpg
+
   export default dogList;

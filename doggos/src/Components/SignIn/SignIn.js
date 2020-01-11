@@ -1,58 +1,40 @@
 import React, { useState } from "react";
+import Form from "./Form/Form";
+import logo from "./logo1.png";
 
-function Form({ addEvent }) {
-  const defaultState = {
-    username: "",
-    password: "",
-  };
-  const [state, setState] = useState(defaultState);
+import "./SignIn.css";
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    addEvent(state);
-    setState(defaultState);
-  };
-
-  const handleChange = e => {
-    setState({
-      ...state,
-      [e.target.name]: e.target.value
-    });
-  };
+function SignIn() {
+  function insertEvent(event) {
+    // ApiClient.createEvent(event).then(() =>
+    //   ApiClient.getAllEvents().then(events => setEvents(events))
+    // );
+  }
 
   return (
-    <form onSubmit={handleSubmit} className="form_align">
-      <label>
-        TITLE
-        <input
-          type="text"
-          name="title"
-          autoComplete="off"
-          value={state.title}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        DATE
-        <input
-          type="datetime-local"
-          name="date"
-          value={state.date}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        VENUE
-        <input
-          type="text"
-          name="venue"
-          autoComplete="off"
-          value={state.venue}
-          onChange={handleChange}
-        />
-      </label>
-      <input type="submit" value="Create" className="submit_button" />
-    </form>
+    <div className="sign-in-cont-background">
+      <div className="sign-in-cont-unite">
+        <div className="img-container">
+
+        <img src={logo} className="logo-animated" ></img>
+        </div>
+        <div className="sign-in-container">
+
+          <div className="sign-in-h1">Member Login</div>
+          <Form addEvent={insertEvent}></Form>
+          <span className="sign-in-span1">
+            Forgot
+            <a href="" className="sign-in-forgot">
+              {" "}
+              Username/Password?
+            </a>
+          </span>
+          <a href="" className="sign-in-signup">
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
-export default Form;
+export default SignIn;

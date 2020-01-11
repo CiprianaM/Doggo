@@ -1,5 +1,6 @@
 import React from "react";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
+import ChatBubbleRoundedIcon from '@material-ui/icons/ChatBubbleRounded';
 import { makeStyles } from "@material-ui/core/styles";
 
 import IconButton from "@material-ui/core/IconButton";
@@ -18,10 +19,10 @@ export default function IconButtons() {
   return (
     <IconButton
       display="flex"
-      aria-label="chatbubble"
+      aria-label="chatbubblerounded"
       className={classes.margin}
     >
-      <ChatBubbleIcon fontSize="large" />
+      <ChatBubbleRoundedIcon fontSize="large"/>
     </IconButton>
   );
 }

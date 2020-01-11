@@ -1,0 +1,37 @@
+.resetpass-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+.form-fields:nth-child(n-1) {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.username-label {
+  height: 5rem;
+  border-radius: 2rem;
+
+}
+.username-input {
+  border-radius: 2rem;
+  background-color: #e6e6e6;
+
+}
+.password-label {
+  border-radius: 2rem;
+}
+.password-input {
+  border-radius: 2rem;
+  background-color: #e6e6e6;
+}
+.resetpass-button {
+ background-color: #57b846;
+}
+.resetpass-button:active {
+  box-shadow: 0px 20px 5px rgba(0,0,0,0.7), 5px -5px 0 rgba(0,0,0,1);
+  transform: translateY(-0.2rem);
+
+}
+
