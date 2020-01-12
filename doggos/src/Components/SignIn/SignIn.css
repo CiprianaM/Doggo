@@ -25,26 +25,11 @@
   justify-content: center;
   display: flex;
   text-align: center;
-  /* border-radius: 50%; */
-  width: 20%;
-  height: 20%;
+
+
   border: transparent;
-  /* overflow: hidden; */
-  /* perspective: none; */
-}
-.logo-animated {
- 
-  object-fit: contain;
-  width: 100%;
-  align-self: center;
 
 }
-.logo-animated:hover {
-  width: 110%;
-  transform: rotate(-15deg);
-}
-
-
 
 .sign-in-h1 {
   font-family: "Poppins", sans-serif;
@@ -78,6 +63,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 label {
   display: flex;

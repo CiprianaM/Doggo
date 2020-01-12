@@ -1,35 +1,47 @@
 import React, { useState } from "react";
+import {useHistory, withRouter} from 'react-router-dom';
 import Form from "./Form/Form";
+import Logo from "../Logo/Logo";
 import logo from "./logo1.png";
 
 import "./SignIn.css";
 
-function SignIn() {
-  function insertEvent(event) {
+function SignIn({handleClick}) {
+  console.log('abc');
+  function route(event) {
     // ApiClient.createEvent(event).then(() =>
     //   ApiClient.getAllEvents().then(events => setEvents(events))
     // );
   }
 
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/dog");
+  }
+  function handleResetClick() {
+    history.push("/reset");
+  }
+  function handleSignUpClick() {
+    history.push("/signup");
+  }
+
+
   return (
     <div className="sign-in-cont-background">
       <div className="sign-in-cont-unite">
-        <div className="img-container">
-
-        <img src={logo} className="logo-animated" ></img>
-        </div>
+        <Logo></Logo>
         <div className="sign-in-container">
-
           <div className="sign-in-h1">Member Login</div>
-          <Form addEvent={insertEvent}></Form>
+          <Form redirected={handleClick}></Form>
           <span className="sign-in-span1">
             Forgot
-            <a href="" className="sign-in-forgot">
+            <a href="" className="sign-in-forgot" onClick={handleResetClick}>
               {" "}
               Username/Password?
             </a>
           </span>
-          <a href="" className="sign-in-signup">
+          <a href="" className="sign-in-signup" onClick={handleSignUpClick}>
             Sign Up
           </a>
         </div>

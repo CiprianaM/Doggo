@@ -1,0 +1,21 @@
+.img-container {
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  border: transparent;
+  overflow: hidden;
+
+}
+.logo-animated {
+
+  object-fit: contain;
+  width: 100%;
+
+  align-self: center;
+
+}
+.logo-animated:hover {
+  width: 110%;
+  transform: rotate(-15deg);
+}

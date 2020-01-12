@@ -7,12 +7,17 @@ import PhotoCamera from '@material-ui/icons/PhotoCamera';
 const useStyles = makeStyles(theme => ({
   root: {
     "& > *": {
-      margin: theme.spacing(1)
+      margin: theme.spacing(1),
+      // height: 100
     }
+  },
+  input: {
+    display: "none"
   }
 }));
 
 function Form({ addEvent }) {
+
   const classes = useStyles();
 
   const defaultState = {
@@ -38,7 +43,10 @@ function Form({ addEvent }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="sign-up-form">
+    <form onSubmit={handleSubmit} className="profile-form">
+      <div>
+
+      </div>
       <div className="form-fields">
         <input
           className="username-input"
@@ -97,14 +105,15 @@ function Form({ addEvent }) {
           onChange={handleChange}
         />
 
+      </div>
+      <div className="form-fields">
         <input
           type="submit"
-          value="REGISTER"
+          value="SAVE CHANGES"
 
           className="sign-up-button"
         />
       </div>
-      
 
     </form>
   );

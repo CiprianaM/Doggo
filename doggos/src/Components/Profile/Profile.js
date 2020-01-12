@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import Form from "./Form/Form";
-import Logo from '../Logo/Logo';
-import { makeStyles } from "@material-ui/core/styles";
-import UploadButton from '../Buttons/UploadButton';
+import ProfilePic from './ProfilePic/ProfilePic';
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import Sadie from './ProfilePic/ProfilePic';
 
-import "./SignUp.css";
+import { makeStyles } from "@material-ui/core/styles";
+import UploadButton from "../Buttons/UploadButton";
+
+import "./Profile.css";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,11 +19,10 @@ const useStyles = makeStyles(theme => ({
   },
   input: {
     display: "none"
-  },
-
+  }
 }));
 
-function SignUp() {
+function Profile() {
   const classes = useStyles();
   function insertEvent(event) {
     // ApiClient.createEvent(event).then(() =>
@@ -26,22 +30,15 @@ function SignUp() {
     // );
   }
   return (
-    <div className="sign-up-cont-background">
-      <div className="sign-up-cont-unite">
-        <div className="sign-up-cont-unite-sub">
-       <Logo></Logo>
-       <div className="img-container">
-
-          <UploadButton></UploadButton>
-       </div>
-
-        </div>
-        <div className="sign-up-container">
-          <div className="sign-up-h1">Welcome aboard!</div>
+    <div className="profile-cont-background">
+      <div className="profile-cont-unite">
+<Sadie></Sadie>
+        <div className="profile-container">
+          <div className="profile-h1">Sadie</div>
           <Form addEvent={insertEvent}></Form>
         </div>
       </div>
     </div>
   );
 }
-export default SignUp;
+export default Profile;

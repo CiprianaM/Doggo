@@ -4,7 +4,6 @@
   justify-content: center;
   height: 80%;
 }
-
 .form-fields:nth-child(n-1) {
   display: flex;
   flex-direction: column;

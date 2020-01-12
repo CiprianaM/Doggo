@@ -7,11 +7,11 @@ import './NavBar.css';
 
 
 
-export default function NavBar() {
+export default function NavBar({redirToProfile}) {
 
   return (
     <div className="nav-bar">
-      <ProfileButton></ProfileButton>
+      <ProfileButton redirToProfile={redirToProfile}></ProfileButton>
       <Logo></Logo>
       <ChatButton></ChatButton>
     </div>

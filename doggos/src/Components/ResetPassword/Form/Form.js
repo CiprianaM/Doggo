@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import {withRouter} from 'react-router-dom';
 
-function Form({addEvent}) {
+function Form({addEvent, handSI}) {
+
+  console.log(handSI, 'this is handSI')
 
   const defaultState = {
     username: "",
@@ -23,7 +26,7 @@ function Form({addEvent}) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="resetpass-form">
+    <form onSubmit={handSI} className="resetpass-form">
         <div className="form-fields">
 
         <input className="username-input"
@@ -60,9 +63,9 @@ function Form({addEvent}) {
           />
           </div>
           <div className="form-fields">
-      <input type="submit" value="SUBMIT"  className="resetpass-button"/>
+      <input type="submit" value="SUBMIT"  className="resetpass-button" onSubmit={handSI} onSubmit={console.log('i got here')}/>
       </div>
     </form>
   );
 }
-export default Form;
+export default withRouter(Form);

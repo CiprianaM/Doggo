@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {useHistory, withRouter} from 'react-router-dom';
 import NavBar from "./NavBar/NavBar";
 import MainContainer from "./MainContainer/MainContainer";
 import Footer from "./Footer/Footer";
@@ -7,10 +8,17 @@ import dogList from './list';
 import "./Dog.css";
 
 function Dog() {
+
+  let history = useHistory();
+
+  function profileClick() {
+    history.push("/profile");
+  }
+  console.log(history);
   const [index, setIndex] = useState(0);
   const dogs = dogList;
 
-  const handleClick = () => {
+  const likeDislikeClick = () => {
     if (index>7) {
       setIndex((index) => index=0);
     } else {
@@ -19,9 +27,9 @@ function Dog() {
   }
   return (
     <div className="dog-component">
-      <NavBar></NavBar>
+      <NavBar redirToProfile={profileClick}></NavBar>
       <MainContainer list={dogs} ind={index}></MainContainer>
-      <Footer passedFunc={handleClick} ind={index}></Footer>
+      <Footer passedFunc={likeDislikeClick} ind={index}></Footer>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-function Form({addEvent}) {
+function Form({redirected}) {
+  console.log(redirected)
 
   const defaultState = {
     username: "",
@@ -8,11 +9,11 @@ function Form({addEvent}) {
   };
   const [state, setState] = useState(defaultState);
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    addEvent(state);
-    setState(defaultState);
-  };
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   route(state);
+  //   setState(defaultState);
+  // };
 
   const handleChange = e => {
     setState({
@@ -22,7 +23,7 @@ function Form({addEvent}) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="sign-in-form">
+    <form className="sign-in-form">
         <div className="form-fields">
 
         <input className="username-input"
@@ -45,7 +46,7 @@ function Form({addEvent}) {
           />
           </div>
           <div className="form-fields">
-      <input type="submit" value="LOGIN"  className="sign-in-button"/>
+      <input type="button" value="LOGIN" onClick={redirected}  className="sign-in-button"/>
       </div>
     </form>
   );

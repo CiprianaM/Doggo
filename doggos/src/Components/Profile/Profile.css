@@ -1,4 +1,4 @@
-.sign-up-cont-background {
+.profile-cont-background {
   background: linear-gradient(to right bottom, #c850c0, #4258d0);
 
   display: flex;
@@ -6,7 +6,8 @@
   height: 100%;
 }
 
-.sign-up-container {
+.profile-container {
+  /* padding: 20rem; */
   align-self: center;
   display: flex;
   justify-content: space-between;
@@ -15,31 +16,12 @@
   padding: 1rem;
   /* max-width: 50vw; */
   background: #fff;
-  height: 90%;
+  height: 80%;
   width: 70%;
   border-radius: 1rem;
   /* margin: 2rem; */
 }
-/* .img-container-signup {
-  align-self: center;
-  justify-content: center;
-  justify-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
-  width: 20%;
-  height: 20%;
-  border: transparent;
-
-} */
-/* .logo-animated {
-
-  object-fit: contain;
-  width: 100%;
-  align-self: center;
-
-} */
 .flex {
 
   display: flex;
@@ -56,14 +38,15 @@
   text-align: center;
 }
 
-.sign-up-h1 {
+.profile-h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #333333;
   font-size: 2.4rem;
+  /* padding: 1rem; */
   /* display: flex; */
 }
-.sign-up-span1 {
+.profile-span1 {
   font-family: "Poppins-Regular";
   /* font-weight: 700; */
   font-size: 1.3rem;
@@ -71,14 +54,14 @@
   color: #666666;
   padding: 0.5rem;
 }
-.sign-up-forgot {
+.profile-forgot {
   text-decoration: none;
   font-family: 'Poppins-Regular';
   font-weight: 700;
   font-size: 1.3rem;
   color: #666666;
 }
-.sign-up-signup {
+.profile-signup {
   text-decoration: none;
   font-family: 'Poppins-Regular';
   font-size: 1.3rem;
@@ -88,7 +71,6 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80%;
 }
 label {
   display: flex;

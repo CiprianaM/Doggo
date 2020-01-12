@@ -9,9 +9,10 @@
   position: relative;
   background-color: #fafafa;
   border-radius: 1rem;
+  box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7);
 }
 .dog-image {
- 
+
   object-fit: contain;
   border-radius: 1rem;
   min-height: 100%;
