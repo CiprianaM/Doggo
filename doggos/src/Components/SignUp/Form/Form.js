@@ -12,8 +12,9 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Form({ addEvent }) {
+function Form({ addEvent, directProfSubmit }) {
   const classes = useStyles();
+  console.log(directProfSubmit)
 
   const defaultState = {
     username: "",
@@ -38,7 +39,7 @@ function Form({ addEvent }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="sign-up-form">
+    <form  className="sign-up-form" onSubmit={directProfSubmit}>
       <div className="form-fields">
         <input
           className="username-input"
@@ -100,11 +101,11 @@ function Form({ addEvent }) {
         <input
           type="submit"
           value="REGISTER"
-
+          onSubmit={directProfSubmit}
           className="sign-up-button"
         />
       </div>
-      
+
 
     </form>
   );

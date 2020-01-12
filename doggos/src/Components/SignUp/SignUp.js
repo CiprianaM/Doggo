@@ -1,29 +1,27 @@
 import React, { useState } from "react";
+import {useHistory} from 'react-router-dom';
+import ClientApi from '../../ClientApi';
 import Form from "./Form/Form";
 import Logo from '../Logo/Logo';
-import { makeStyles } from "@material-ui/core/styles";
+
 import UploadButton from '../Buttons/UploadButton';
 
 import "./SignUp.css";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1)
-    }
-  },
-  input: {
-    display: "none"
-  },
-
-}));
 
 function SignUp() {
-  const classes = useStyles();
-  function insertEvent(event) {
-    // ApiClient.createEvent(event).then(() =>
-    //   ApiClient.getAllEvents().then(events => setEvents(events))
-    // );
+  const [pupper, SetPupper] = useState(0);
+
+  let history = useHistory();
+  
+  function directToProfileSubmit () {
+    history.push('/profile');
+  }
+
+  function insertPupper(event) {
+    ClientApi.createPupper(event).then(() =>
+      ClientApi.getAllPuppers().then(events => SetPupper(events))
+    );
   }
   return (
     <div className="sign-up-cont-background">
@@ -38,7 +36,7 @@ function SignUp() {
         </div>
         <div className="sign-up-container">
           <div className="sign-up-h1">Welcome aboard!</div>
-          <Form addEvent={insertEvent}></Form>
+          <Form directProfSubmit={directToProfileSubmit} addPupper={insertPupper}></Form>
         </div>
       </div>
     </div>

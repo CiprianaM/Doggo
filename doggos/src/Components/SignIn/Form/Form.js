@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Form({redirected}) {
-  console.log(redirected)
+  console.log(redirected, 'this is the redirection')
 
   const defaultState = {
     username: "",
@@ -23,7 +23,7 @@ function Form({redirected}) {
   };
 
   return (
-    <form className="sign-in-form">
+    <form onSubmit={redirected} className="sign-in-form" >
         <div className="form-fields">
 
         <input className="username-input"
@@ -46,7 +46,7 @@ function Form({redirected}) {
           />
           </div>
           <div className="form-fields">
-      <input type="button" value="LOGIN" onClick={redirected}  className="sign-in-button"/>
+      <input type="submit" value="LOGIN" onSubmit={redirected}  className="sign-in-button"/>
       </div>
     </form>
   );

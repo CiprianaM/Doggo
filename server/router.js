@@ -3,7 +3,7 @@ const router = require ('express').Router();
 const userController = require ('./controllers/users');
 const writeInFile = require ('./controllers/writeJSON');
 
-router.get('/pupper', userController.getAllUsers);
+router.get('/puppers', userController.getAllUsers);
 router.post('/profile', userController.createNewUser);
 router.delete('/pupper/:id', userController.deleteUser);
 router.get('/temp', writeInFile);

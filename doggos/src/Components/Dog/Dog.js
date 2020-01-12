@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {useHistory, withRouter} from 'react-router-dom';
+import ClientApi from '../../ClientApi';
 import NavBar from "./NavBar/NavBar";
 import MainContainer from "./MainContainer/MainContainer";
 import Footer from "./Footer/Footer";
@@ -14,7 +15,12 @@ function Dog() {
   function profileClick() {
     history.push("/profile");
   }
-  console.log(history);
+  const printPuppers = async () => {
+    const result = await ClientApi.getAllPuppers();
+    console.log(result);
+    return result;
+  }
+  printPuppers()
   const [index, setIndex] = useState(0);
   const dogs = dogList;
 

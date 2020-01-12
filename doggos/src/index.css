@@ -25,6 +25,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
+  justify-content: flex-end;
 }
 .sign-in-button {
   font-family: "Montserrat-Bold";

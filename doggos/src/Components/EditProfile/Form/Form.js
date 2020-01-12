@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Form({ addEvent }) {
+function Form({ addEvent , redirStaticProfile}) {
 
   const classes = useStyles();
 
@@ -43,7 +43,7 @@ function Form({ addEvent }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="profile-form">
+    <form  className="profile-form">
       <div>
 
       </div>
@@ -72,28 +72,6 @@ function Form({ addEvent }) {
         />
 
         <input
-          className="password-input"
-          placeholder="Your password goes here"
-          onFocus={e => (e.target.placeholder = "")}
-          onBlur={e => (e.target.placeholder = "Your password goes here")}
-          type="password"
-          name="password"
-          autoComplete="off"
-          value={state.password}
-          onChange={handleChange}
-        />
-        <input
-          className="password-input"
-          placeholder="Please confirm your password"
-          onFocus={e => (e.target.placeholder = "")}
-          onBlur={e => (e.target.placeholder = "Please confirm your password")}
-          type="password"
-          name="passConf"
-          autoComplete="off"
-          value={state.passConf}
-          onChange={handleChange}
-        />
-        <input
           className="username-input"
           placeholder="Short description"
           onFocus={e => (e.target.placeholder = "")}
@@ -110,7 +88,7 @@ function Form({ addEvent }) {
         <input
           type="submit"
           value="SAVE CHANGES"
-
+          onClick={redirStaticProfile}
           className="sign-up-button"
         />
       </div>

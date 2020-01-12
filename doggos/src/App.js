@@ -4,10 +4,8 @@ import Dog from "./Components/Dog/Dog";
 import SignIn from "./Components/SignIn/SignIn";
 import ResetPasword from "./Components/ResetPassword/ResetPassword";
 import SignUp from "./Components/SignUp/SignUp";
-import Buttons from "./Components/Buttons/Buttons";
-import Profile from "./Components/Profile/Profile";
-import Sadie from "./Components/Dog/Other/sadie.jpg";
-
+import StaticProfile from "./Components/StaticProfile/StaticProfile";
+import EditProfile from './Components/EditProfile/EditProfile';
 
 import {
   BrowserRouter as Router,
@@ -21,13 +19,7 @@ import {
 } from "react-router-dom";
 
 export default function App() {
-
-
-
-
   return (
-
-
     <Router>
       <div>
         <Switch>
@@ -38,7 +30,10 @@ export default function App() {
             <Dog/>
           </Route>
           <Route  exact path="/profile">
-            <Profile/>
+            <StaticProfile/>
+          </Route>
+          <Route exact path="/editprofile">
+            <EditProfile/>
           </Route>
           <Route exact path="/reset">
             <ResetPasword/>
