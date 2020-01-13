@@ -18,7 +18,14 @@ exports.getAllCreated = async (req, res) => {
   const users = await myExtendedUserModel.findAll();
   res.json(users);
 };
-
+exports.getNewlyCreated = async (req, res) => {
+  const reqId = (req.params.id).slice(1,req.params.id.length);
+  console.log(reqId)
+    const user = await myExtendedUserModel.findOne({
+    where: { id: reqId }});
+  // console.log(req, res, user);
+  res.json(user);
+}
 exports.deleteUser = async (req, res) => {
   console.log(req.params.id, "this is the req");
   await myUserModel.destroy({

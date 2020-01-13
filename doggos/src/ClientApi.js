@@ -4,6 +4,10 @@ export default {
   getAllPuppers: () => {
     return fetchRequest("/puppers");
   },
+  getNewlyCreatedPupper: id => {
+    const newUrl ='/signup/:'+id;
+    return fetchRequest(newUrl);
+  },
   createPupper: data => {
     return fetchRequest("/signup", {
       method: "POST",

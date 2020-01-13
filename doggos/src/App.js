@@ -29,7 +29,7 @@ export default function App() {
           <Route exact path="/dog">
             <Dog />
           </Route>
-          <Route exact path="/profile">
+          <Route path="/profile/:id">
             <StaticProfile />
           </Route>
           <Route exact path="/editprofile">
