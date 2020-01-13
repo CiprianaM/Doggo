@@ -5,7 +5,7 @@ export default {
     return fetchRequest("/puppers");
   },
   createPupper: data => {
-    return fetchRequest("/events", {
+    return fetchRequest("/signup", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }

@@ -151,6 +151,8 @@ html {
   width: 30%;
   padding: 1rem;
   width: 20%;
+  align-content: center;
+  justify-content: center;
 
 }
 .profile-cont-background {

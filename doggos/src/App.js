@@ -5,7 +5,7 @@ import SignIn from "./Components/SignIn/SignIn";
 import ResetPasword from "./Components/ResetPassword/ResetPassword";
 import SignUp from "./Components/SignUp/SignUp";
 import StaticProfile from "./Components/StaticProfile/StaticProfile";
-import EditProfile from './Components/EditProfile/EditProfile';
+import EditProfile from "./Components/EditProfile/EditProfile";
 
 import {
   BrowserRouter as Router,
@@ -23,31 +23,29 @@ export default function App() {
     <Router>
       <div>
         <Switch>
-         <Route exact path="/">
-           <SignIn/>
-         </Route>
-          <Route exact path="/dog">
-            <Dog/>
+          <Route exact path="/">
+            <SignIn />
           </Route>
-          <Route  exact path="/profile">
-            <StaticProfile/>
+          <Route exact path="/dog">
+            <Dog />
+          </Route>
+          <Route exact path="/profile">
+            <StaticProfile />
           </Route>
           <Route exact path="/editprofile">
-            <EditProfile/>
+            <EditProfile />
           </Route>
           <Route exact path="/reset">
-            <ResetPasword/>
+            <ResetPasword />
           </Route>
           <Route exact path="/signup">
-            <SignUp/>
+            <SignUp />
           </Route>
           <Route exact path="/signin">
-            <SignIn/>
+            <SignIn />
           </Route>
         </Switch>
       </div>
     </Router>
   );
 }
-
-
