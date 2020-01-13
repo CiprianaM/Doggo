@@ -12,34 +12,33 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Form({ addEvent, directProfSubmit }) {
-  const classes = useStyles();
-  console.log(directProfSubmit)
-
-  const defaultState = {
+function Form({addPupper, directProfSubmit }) {
+    const defaultState = {
     username: "",
     email: "",
     password: "",
-    passConf: "",
+    confirmPass: "",
     description: ""
   };
   const [state, setState] = useState(defaultState);
 
   const handleSubmit = e => {
     e.preventDefault();
-    addEvent(state);
-    setState(defaultState);
+     addPupper(state);
+     setState(defaultState);
+    // directProfSubmit() //this needs to be async to make sure first I save the data
   };
 
   const handleChange = e => {
-    setState({
-      ...state,
-      [e.target.name]: e.target.value
-    });
+    // e.preventDefault();
+    // addPupper(state);
+    // setState(defaultState);
+    setState({...state,
+      [e.target.name]: e.target.value});
   };
 
   return (
-    <form  className="sign-up-form" onSubmit={directProfSubmit}>
+    <form  className="sign-up-form" onSubmit={handleSubmit}>
       <div className="form-fields">
         <input
           className="username-input"
@@ -81,9 +80,9 @@ function Form({ addEvent, directProfSubmit }) {
           onFocus={e => (e.target.placeholder = "")}
           onBlur={e => (e.target.placeholder = "Please confirm your password")}
           type="password"
-          name="passConf"
+          name="confirmPass"
           autoComplete="off"
-          value={state.passConf}
+          value={state.confirmPass}
           onChange={handleChange}
         />
         <input

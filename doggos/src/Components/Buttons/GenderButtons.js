@@ -16,8 +16,13 @@ const useStyles = makeStyles(theme => ({
   formControl: {
     // margin: theme.spacing(3),
     justifyContent: "center",
-    alignContent: "center"
+    alignContent: "center",
+    margin: 0
   },
+  label:{
+    margin: 0,
+  }
+
 }));
 
 const GreenRadio = withStyles({
@@ -27,24 +32,28 @@ const GreenRadio = withStyles({
       color: green[600],
     },
   },
+
   checked: {},
 })(props => <Radio color="default" {...props} />);
 
-export default function RadioButtonsGroup() {
+export default function RadioButtonsGroup({getGender}) {
   const classes = useStyles();
   const [value, setValue] = React.useState('female');
 
   const handleChange = event => {
+    getGender(event);
     setValue(event.target.value);
+    
   };
+
 
   return (
     <div className="gender-buttons-arrangement">
-      <FormControl component="fieldset" className={classes.formControl} row>
+      <FormControl component="fieldset" className={classes.formControl} row="true">
         <FormLabel component="legend" >Your dog is a </FormLabel>
-        <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange} row>
-          <FormControlLabel value="female" control={<GreenRadio />} label="Female"/>
-          <FormControlLabel value="male" control={<Radio />} label="Male"/>
+        <RadioGroup aria-label="gender" name="gender" value={value} onChange={handleChange} row>
+          <FormControlLabel classes={{root:classes.label}}  value="female" control={<GreenRadio />} label="Female"/>
+          <FormControlLabel classes={{root:classes.label}} value="male" control={<Radio />} label="Male"/>
 
 
         </RadioGroup>
