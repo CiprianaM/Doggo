@@ -12,12 +12,10 @@
 .username-label {
   height: 5rem;
   border-radius: 2rem;
-
 }
 .username-input {
   border-radius: 2rem;
   background-color: #e6e6e6;
-
 }
 .password-label {
   border-radius: 2rem;
@@ -27,12 +25,9 @@
   background-color: #e6e6e6;
 }
 .sign-in-button {
- background-color: #57b846;
+  background-color: #f50057;
 }
 .sign-in-button:active {
-
-    box-shadow: 0rem 0.5rem 1rem rgba(#050505, 0.2);
-    transform: translateY(-0.1rem);
-
+  box-shadow: 0rem 0.5rem 1rem rgba(#050505, 0.2);
+  transform: translateY(-0.1rem);
 }
-

@@ -1,40 +1,32 @@
 .profile-cont-background {
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
-
   display: flex;
   justify-content: center;
   height: 100%;
 }
 
 .profile-container {
-  /* padding: 20rem; */
   align-self: center;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
   padding: 1rem;
-  /* max-width: 50vw; */
   background: #fff;
   height: 80%;
   width: 70%;
   border-radius: 1rem;
-  /* margin: 2rem; */
 }
 
 .flex {
-
   display: flex;
   align-self: center;
   display: none;
-  /* flex-direction: row; */
-  /* padding: 20rem; */
 }
 .upload-label {
   font-size: 30rem;
 }
 .upload-button {
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
+  background: #f50057;
   text-align: center;
 }
 
@@ -43,27 +35,23 @@
   font-weight: 700;
   color: #333333;
   font-size: 2.4rem;
-  /* padding: 1rem; */
-  /* display: flex; */
 }
 .profile-span1 {
   font-family: "Poppins-Regular";
-  /* font-weight: 700; */
   font-size: 1.3rem;
-  /* height: 5rem; */
   color: #666666;
   padding: 0.5rem;
 }
 .profile-forgot {
   text-decoration: none;
-  font-family: 'Poppins-Regular';
+  font-family: "Poppins-Regular";
   font-weight: 700;
   font-size: 1.3rem;
   color: #666666;
 }
 .profile-signup {
   text-decoration: none;
-  font-family: 'Poppins-Regular';
+  font-family: "Poppins-Regular";
   font-size: 1.3rem;
   color: #666666;
 }
@@ -78,7 +66,6 @@ label {
 }
 
 input {
-  /* border-radius: 2rem; */
   margin: 0.8rem;
   background-color: #e6e6e6;
   border-style: none;

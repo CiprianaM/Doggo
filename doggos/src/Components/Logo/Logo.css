@@ -5,15 +5,12 @@
   text-align: center;
   border: transparent;
   overflow: hidden;
-
 }
 .logo-animated {
-
   object-fit: contain;
   width: 100%;
 
   align-self: center;
-
 }
 .logo-animated:hover {
   width: 110%;

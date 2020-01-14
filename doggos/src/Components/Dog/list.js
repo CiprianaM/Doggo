@@ -1,5 +1,3 @@
-import { List } from "@material-ui/core";
-
 const dogList =
     [
       {

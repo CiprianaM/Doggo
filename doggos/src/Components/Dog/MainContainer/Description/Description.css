@@ -1,6 +1,5 @@
 .description-container {
   position: absolute;
-  /* background-color: #fff; */
   min-height: 3rem;
   bottom: 0;
   border-radius: 2rem;
@@ -32,8 +31,7 @@
   color: white;
   font-weight: 500;
 }
-.description-description-wrapper{
-
+.description-description-wrapper {
   margin: 1rem;
   padding: 0.2rem;
   display: flex;

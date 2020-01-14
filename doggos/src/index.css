@@ -30,7 +30,7 @@ html {
 .sign-in-button {
   font-family: "Montserrat-Bold";
   font-weight: 700;
-  background-color: #57b846;
+  background-color: #f50057;
   color: white;
   font-size: 1.5rem;
   border-radius: 2.5rem;
@@ -39,14 +39,15 @@ html {
 }
 .sign-in-button:active {
 
-  box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7);
+  /* box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7); */
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
   transform: translateY(-0.1rem);
 
 }
 
 .sign-in-cont-background {
   position: fixed;
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
+  /* background: linear-gradient(to right bottom, #c850c0, #4258d0); */
   display: flex;
   justify-content: space-evenly;
   height: 100%;
@@ -58,7 +59,7 @@ html {
   flex-direction: row;
   background-color: white;
   width: 90%;
-
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
   align-self: center;
   border-radius: 2rem;
   justify-content: center;
@@ -70,7 +71,7 @@ html {
 .resetpass-button {
   font-family: "Montserrat-Bold";
   font-weight: 700;
-  background-color: #57b846;
+  background-color: #f50057;
   color: white;
   font-size: 1.5rem;
   border-radius: 2.5rem;
@@ -79,14 +80,15 @@ html {
 }
 .resetpass-button:active {
 
-  box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7);
+  /* box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7); */
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
   transform: translateY(-0.1rem);
 
 }
 
 .resetpass-cont-background {
   position: fixed;
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
+  /* background: linear-gradient(to right bottom, #c850c0, #4258d0); */
   display: flex;
   justify-content: space-evenly;
   height: 100%;
@@ -98,7 +100,7 @@ html {
   flex-direction: row;
   background-color: white;
   width: 90%;
-
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
   align-self: center;
   border-radius: 2rem;
   justify-content: center;
@@ -110,7 +112,7 @@ html {
 .sign-up-button {
   font-family: "Montserrat-Bold";
   font-weight: 700;
-  background-color: #57b846;
+  background-color: #f50057;
   color: white;
   font-size: 1.5rem;
   border-radius: 2.5rem;
@@ -119,14 +121,15 @@ html {
 }
 .sign-up-button:active {
 
-  box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7);
+  /* box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7); */
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
   transform: translateY(-0.1rem);
 
 }
 
 .sign-up-cont-background {
   position: fixed;
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
+  /* background: linear-gradient(to right bottom, #c850c0, #4258d0); */
   display: flex;
   justify-content: space-evenly;
   height: 100%;
@@ -143,13 +146,15 @@ html {
   border-radius: 2rem;
   justify-content: center;
   overflow: hidden;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
 }
+
 .sign-up-cont-unite-sub {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 30%;
-  padding: 1rem;
+  padding-left: 1rem;
   width: 20%;
   align-content: center;
   justify-content: center;
@@ -157,7 +162,7 @@ html {
 }
 .profile-cont-background {
   position: fixed;
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
+  /* background: linear-gradient(to right bottom, #c850c0, #4258d0); */
   display: flex;
   justify-content: center;
   height: 100%;
@@ -168,9 +173,10 @@ html {
   display: flex;
   flex-direction: row;
   background-color: white;
-  height: 95%;
-  width: 90%;
+  height: 90vh;
+  width: 80vw;
   overflow: hidden;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
 
 
 

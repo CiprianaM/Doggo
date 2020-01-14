@@ -1,28 +1,21 @@
 .profile-cont-background {
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
-
   display: flex;
   justify-content: center;
   height: 100%;
 }
 
 .static-profile-container {
-  /* padding: 20rem; */
   align-self: center;
   display: flex;
-  justify-content:space-evenly;
-  /* align-items: center; */
+  justify-content: space-evenly;
   flex-direction: column;
   text-align: center;
   padding: 1rem;
-  /* max-width: 50vw; */
   background: #fff;
   height: 80%;
   width: 70%;
   border-radius: 1rem;
-  /* margin: 2rem; */
 }
-
 
 .static-profile-cont-unite {
   display: flex;
@@ -33,16 +26,14 @@
   justify-content: center;
   align-self: center;
   border-radius: 2rem;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
 .carousel-button {
   align-self: center;
-  height: 10vw;
-  width: 10vw;
-  /* background-color: red; */
+  height: 10vh;
+  width: 10vh;
   border: none;
-  margin: 1rem;
-  /* padding: 2rem; */
-
 }
 .static-info-div {
   display: flex;
@@ -51,32 +42,23 @@
   align-items: center;
   border-radius: 10rem;
   background-color: #e6e6e6;
-  /* height: 20%; */
   font-size: 1.4rem;
   padding: 2rem;
-  color:rgb(128, 119, 119);
-  /* text-align: center; */
+  color: rgb(128, 119, 119);
   align-content: center;
 }
-
 
 .edit-profile-button {
   font-family: "Montserrat-Bold";
   font-weight: 700;
-  background-color: #57b846;
+  background-color: #f50057;
   color: white;
   font-size: 1.5rem;
   border-radius: 2.5rem;
   line-height: 1.5;
   width: 80%;
-  /* height: 5rem; */
 }
 .edit-profile-button:active {
-
-  box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.7);
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
   transform: translateY(-0.1rem);
-
 }
-
-
-

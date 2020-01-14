@@ -5,32 +5,30 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles(theme => ({
   root: {
     "& > *": {
-      margin: theme.spacing(1)
-    }
+      minWidth: 0,
+      width: "80%"
+    },
+    display: "flex",
+    padding: 0,
+    justifyContent: "center",
+    minWidth: 0
   },
   input: {
     display: "none"
+  },
+  button: {
+    root: {
+      minWidth: 0
+    }
   }
 }));
 
-function UploadButton({getImage}) {
+function UploadButton({ getImage }) {
   const classes = useStyles();
-//   const [photo, setPhoto] = useState("");
-
-
-//   const addImage = e => {
-//     I am leaving the console.logs here for future implementation of picture upload
-//     console.log(e);
-//     console.log(e.target.files);
-//     console.log(e.target.files);
-// setPhoto('https://images.dog.ceo/breeds/deerhound-scottish/n02092002_4131.jpg');
-
-//   };
 
   return (
     <div className={classes.root}>
       <input
-        // ref={(ref) => setPhoto(ref)}
         onChange={getImage}
         accept="image/*"
         className={classes.input}

@@ -12,12 +12,10 @@
 .username-label {
   height: 5rem;
   border-radius: 2rem;
-
 }
 .username-input {
   border-radius: 2rem;
   background-color: #e6e6e6;
-
 }
 .password-label {
   border-radius: 2rem;
@@ -27,11 +25,9 @@
   background-color: #e6e6e6;
 }
 .resetpass-button {
- background-color: #57b846;
+  background-color: #f50057;
 }
 .resetpass-button:active {
-  box-shadow: 0px 20px 5px rgba(0,0,0,0.7), 5px -5px 0 rgba(0,0,0,1);
+  box-shadow: 0px 20px 5px rgba(0, 0, 0, 0.7), 5px -5px 0 rgba(0, 0, 0, 1);
   transform: translateY(-0.2rem);
-
 }
-

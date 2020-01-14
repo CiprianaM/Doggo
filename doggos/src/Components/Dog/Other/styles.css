@@ -10,162 +10,156 @@ html {
 }
 
 body {
-	box-sizing: border-box;
-	font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-	padding: 3rem;
+  padding: 3rem;
 }
 
 .dog-container {
-	width: 90vw;
-	height: 95vh;
-	font-family: 'Noto Sans', sans-serif;
-	padding: 3rem;
-	display: flex;
-	margin: auto;
-	flex-direction: column;
+  width: 90vw;
+  height: 95vh;
+  font-family: "Noto Sans", sans-serif;
+  padding: 3rem;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
 }
 
 .app {
-	background-color: #FFF;
-	display: flex;
-
+  background-color: #fff;
+  display: flex;
 }
 
 .header {
-	background-color: #FFF;
-	width:100%;
-	height:6rem;
-	border-bottom: .1rem solid #e2e2e2;
-	text-align: center;
-	margin-bottom: 1rem;
-	display: flex;
-	justify-content: space-between;
-	height: 100%;
-	align-self: center;
+  background-color: #fff;
+  width: 100%;
+  height: 6rem;
+  border-bottom: 0.1rem solid #e2e2e2;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-self: center;
 }
 .header-doggo {
-	font-family: 'Lakki Reddy', cursive;
-	font-size: 10rem;
-	line-height: 1;
+  font-family: "Lakki Reddy", cursive;
+  font-size: 10rem;
+  line-height: 1;
 }
 
 .content {
-	padding: 1rem;
-	padding-top: 0rem;
-	overflow: hidden;
-	/* background-image: url('sadie.jpg'); */
-	background-size: cover;
+  padding: 1rem;
+  padding-top: 0rem;
+  overflow: hidden;
+  background-size: cover;
   background-position: center;
-	/* width: 80vw; */
-	height: 70vh;
-	border-radius: 3rem;
-
+  height: 70vh;
+  border-radius: 3rem;
 }
 
 .dog-image {
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-border-radius: 3rem;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 3rem;
 }
 
 .users {
-	display: block;
-	width: 2rem;
-	background: url(http://web.arjentienkamp.com/codepen/tinder/users.png);
-	background-size: 2rem;
-	background-repeat: no-repeat;
-	padding-left: 3rem;
-	background-position: 5rem;
+  display: block;
+  width: 2rem;
+  background: url(http://web.arjentienkamp.com/codepen/tinder/users.png);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  padding-left: 3rem;
+  background-position: 5rem;
 }
 
 .moments {
-	display: block;
-	width: 1.4rem;
-	background: url(http://web.arjentienkamp.com/codepen/tinder/moments.png);
-	background-size: 2.6rem;
-	background-repeat: no-repeat;
-	padding-left: 3.5rem;
-	background-position: .5rem;
+  display: block;
+  width: 1.4rem;
+  background: url(http://web.arjentienkamp.com/codepen/tinder/moments.png);
+  background-size: 2.6rem;
+  background-repeat: no-repeat;
+  padding-left: 3.5rem;
+  background-position: 0.5rem;
 }
 
 .header-chat {
-	display: block;
-	width: 3.4rem;
-	height: 3rem;
-	background: url(http://web.arjentienkamp.com/codepen/tinder/chat.png);
-	background-size: 3rem;
-	background-repeat: no-repeat;
-	padding-left: .4rem;
-	background-position: .5rem;
-	float: right;
-	margin-top: 0rem;
+  display: block;
+  width: 3.4rem;
+  height: 3rem;
+  background: url(http://web.arjentienkamp.com/codepen/tinder/chat.png);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  padding-left: 0.4rem;
+  background-position: 0.5rem;
+  float: right;
+  margin-top: 0rem;
 }
 
 .header-settings {
-	display: block;
-	width: 3.4rem;
-	height: 3rem;
-	background: url(http://web.arjentienkamp.com/codepen/tinder/settings.png);
-	background-size: 3rem;
-	background-repeat: no-repeat;
-	padding-left: .4rem;
-	background-position: .5rem;
-	float: left;
-	margin-top: 0rem;
+  display: block;
+  width: 3.4rem;
+  height: 3rem;
+  background: url(http://web.arjentienkamp.com/codepen/tinder/settings.png);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  padding-left: 0.4rem;
+  background-position: 0.5rem;
+  float: left;
+  margin-top: 0rem;
 }
 
 .footer {
- align-self: flex-end;
- display: flex;
- justify-content: space-between;
-
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
 
 .rate {
-	width: 7rem;
-	height:7rem;
-	border-radius: 7rem;
-	background: #FFF;
-	border: .5rem solid #f0f0f0;
-	float: left;
-	box-shadow: .1rem .1rem .1rem 0rem #e9e9e9;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 7rem;
+  background: #fff;
+  border: 0.5rem solid #f0f0f0;
+  float: left;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0rem #e9e9e9;
 }
 
 .rate:nth-child(1) {
-	margin-left: .4rem;
-	background: url(http://web.arjentienkamp.com/codepen/tinder/delete.png);
-	background-size: 2.5rem;
-	background-position: center;
-	background-repeat: no-repeat;
+  margin-left: 0.4rem;
+  background: url(http://web.arjentienkamp.com/codepen/tinder/delete.png);
+  background-size: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
 .rate:nth-child(3) {
-	margin-left: -.4rem;
-	background: url(http://web.arjentienkamp.com/codepen/tinder/heart.png);
-	background-size: 2.5rem;
-	background-position: center;
-	background-repeat: no-repeat;
+  margin-left: -0.4rem;
+  background: url(http://web.arjentienkamp.com/codepen/tinder/heart.png);
+  background-size: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .info {
-	width: 4rem;
-	height: 4rem;
-	border-radius: 4rem;
-	background: #FFF;
-	border: .5rem solid #f0f0f0;
-	float: left;
-	box-shadow: .1rem .1rem .1rem 0rem #e9e9e9;
-	margin-top: 1.4rem;
-	margin-left: -.4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  background: #fff;
+  border: 0.5rem solid #f0f0f0;
+  float: left;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0rem #e9e9e9;
+  margin-top: 1.4rem;
+  margin-left: -0.4rem;
 
-	background: url(http://web.arjentienkamp.com/codepen/tinder/info.png);
-	background-size: 1.5rem;
-	background-position: center;
-	background-repeat: no-repeat;
+  background: url(http://web.arjentienkamp.com/codepen/tinder/info.png);
+  background-size: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }

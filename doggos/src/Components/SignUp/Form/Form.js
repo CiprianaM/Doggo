@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -12,8 +9,8 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Form({addPupper, directProfSubmit }) {
-    const defaultState = {
+function Form({ addPupper, directProfSubmit }) {
+  const defaultState = {
     username: "",
     email: "",
     password: "",
@@ -24,8 +21,8 @@ function Form({addPupper, directProfSubmit }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-     addPupper(state);
-     setState(defaultState);
+    addPupper(state);
+    setState(defaultState);
     // directProfSubmit() //this needs to be async to make sure first I save the data
   };
 
@@ -33,12 +30,11 @@ function Form({addPupper, directProfSubmit }) {
     // e.preventDefault();
     // addPupper(state);
     // setState(defaultState);
-    setState({...state,
-      [e.target.name]: e.target.value});
+    setState({ ...state, [e.target.name]: e.target.value });
   };
 
   return (
-    <form  className="sign-up-form" onSubmit={handleSubmit}>
+    <form className="sign-up-form" onSubmit={handleSubmit}>
       <div className="form-fields">
         <input
           className="username-input"
@@ -104,8 +100,6 @@ function Form({addPupper, directProfSubmit }) {
           className="sign-up-button"
         />
       </div>
-
-
     </form>
   );
 }

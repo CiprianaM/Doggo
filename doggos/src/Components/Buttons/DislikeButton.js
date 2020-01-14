@@ -1,18 +1,17 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Fab from '@material-ui/core/Fab';
-import CloseIcon from '@material-ui/icons/Close';
-
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Fab from "@material-ui/core/Fab";
+import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    '& > *': {
-      margin: theme.spacing(1),
-    },
+    "& > *": {
+      margin: theme.spacing(1)
+    }
   },
   extendedIcon: {
-    marginRight: theme.spacing(1),
-  },
+    marginRight: theme.spacing(1)
+  }
 }));
 
 export default function DislikeButton(props) {
@@ -21,7 +20,7 @@ export default function DislikeButton(props) {
   return (
     <div className={classes.root}>
       <Fab color="secondary" aria-label="like" onClick={props.passedFunc2}>
-      <CloseIcon fontSize="large"/>
+        <CloseIcon fontSize="large" />
       </Fab>
     </div>
   );

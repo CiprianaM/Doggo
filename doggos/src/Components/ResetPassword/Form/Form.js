@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import {withRouter} from 'react-router-dom';
+import { withRouter } from "react-router-dom";
 
-function Form({addEvent, handSI}) {
-
-  console.log(handSI, 'this is handSI')
-
+function Form({ addEvent, handSI }) {
   const defaultState = {
     username: "",
     password: "",
@@ -27,43 +24,50 @@ function Form({addEvent, handSI}) {
 
   return (
     <form onSubmit={handSI} className="resetpass-form">
-        <div className="form-fields">
-
-        <input className="username-input"
+      <div className="form-fields">
+        <input
+          className="username-input"
           placeholder="Username"
-          onFocus={(e) => e.target.placeholder = ""}
-          onBlur={(e) => e.target.placeholder = "Username"}
+          onFocus={e => (e.target.placeholder = "")}
+          onBlur={e => (e.target.placeholder = "Username")}
           type="text"
           name="username"
           autoComplete="off"
           value={state.username}
           onChange={handleChange}
-          />
+        />
 
-
-        <input className="password-input"
+        <input
+          className="password-input"
           placeholder="New password"
-          onFocus={(e) => e.target.placeholder = ""}
-          onBlur={(e) => e.target.placeholder = "New password"}
+          onFocus={e => (e.target.placeholder = "")}
+          onBlur={e => (e.target.placeholder = "New password")}
           type="password"
           name="password"
           autoComplete="off"
           value={state.password}
           onChange={handleChange}
-          />
-        <input className="password-input"
+        />
+        <input
+          className="password-input"
           placeholder="Confirm password"
-          onFocus={(e) => e.target.placeholder = ""}
-          onBlur={(e) => e.target.placeholder = "Confirm password"}
+          onFocus={e => (e.target.placeholder = "")}
+          onBlur={e => (e.target.placeholder = "Confirm password")}
           type="password"
           name="confirmPass"
           autoComplete="off"
           value={state.confirmPass}
           onChange={handleChange}
-          />
-          </div>
-          <div className="form-fields">
-      <input type="submit" value="SUBMIT"  className="resetpass-button" onSubmit={handSI} onSubmit={console.log('i got here')}/>
+        />
+      </div>
+      <div className="form-fields">
+        <input
+          type="submit"
+          value="SUBMIT"
+          className="resetpass-button"
+          onSubmit={handSI}
+          onSubmit={console.log("i got here")}
+        />
       </div>
     </form>
   );

@@ -5,10 +5,8 @@ import PhotoCamera from "@material-ui/icons/PhotoCamera";
 
 import { makeStyles } from "@material-ui/core/styles";
 
-
 import "./ProfilePic.css";
 import Sadie from "../../Dog/Other/sadie.jpg";
-
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,33 +19,31 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function ProfilePic () {
+function ProfilePic() {
   const classes = useStyles();
   return (
     <div className="profilePic-unite-container">
       <div className="profile-pic-container">
-
-<img src={Sadie} className="profilePic"></img>
-</div>
-    <div className={classes.root}>
-      <input
-        accept="image/*"
-        className={classes.input}
-        id="icon-button-file"
-        type="file"
-      />
-      <label htmlFor="icon-button-file">
-        <IconButton
-          color="primary"
-          aria-label="upload picture"
-          component="span"
-        >
-          <PhotoCamera />
-        </IconButton>
-      </label>
+        <img src={Sadie} className="profilePic"></img>
+      </div>
+      <div className={classes.root}>
+        <input
+          accept="image/*"
+          className={classes.input}
+          id="icon-button-file"
+          type="file"
+        />
+        <label htmlFor="icon-button-file">
+          <IconButton
+            color="primary"
+            aria-label="upload picture"
+            component="span"
+          >
+            <PhotoCamera />
+          </IconButton>
+        </label>
+      </div>
     </div>
-
-  </div>
-  )
+  );
 }
 export default ProfilePic;

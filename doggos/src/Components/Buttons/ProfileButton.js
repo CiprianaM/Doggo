@@ -12,12 +12,16 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ProfileButton({redirToProfile}) {
+export default function ProfileButton({ redirToProfile }) {
   const classes = useStyles();
-  console.log(redirToProfile)
   return (
-    <IconButton display="flex" aria-label="person" className={classes.margin} onClick={redirToProfile}>
+    <IconButton
+      display="flex"
+      aria-label="person"
+      className={classes.margin}
+      onClick={redirToProfile}
+    >
       <PersonIcon fontSize="large" />
-    </IconButton >
+    </IconButton>
   );
 }

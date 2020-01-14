@@ -10,8 +10,7 @@ export default function Description(props) {
         <div className="description-gender">{props.genderVal}</div>
       </div>
       <div className="description-description-wrapper">
-      <div className="description-description">{props.descriptionVal}</div>
-
+        <div className="description-description">{props.descriptionVal}</div>
       </div>
     </div>
   );

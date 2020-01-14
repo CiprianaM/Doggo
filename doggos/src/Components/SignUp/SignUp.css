@@ -1,5 +1,5 @@
 .sign-up-cont-background {
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
+  /* background: linear-gradient(to right bottom, #c850c0, #4258d0); */
 
   display: flex;
   justify-content: center;
@@ -41,10 +41,9 @@
 
 } */
 .flex {
-
   display: flex;
   align-self: center;
-  display: none;
+  /* display: none; */
   /* flex-direction: row; */
   /* padding: 20rem; */
 }
@@ -52,41 +51,43 @@
   font-size: 30rem;
 }
 .upload-button {
-  background: linear-gradient(to right bottom, #c850c0, #4258d0);
+  background: #f50057;
   text-align: center;
 }
 .gender-buttons-container {
   display: flex;
   flex-direction: row;
-  width: 80%;
+
   justify-content: center;
   align-content: center;
+}
+.sign-up-with-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .sign-up-h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #333333;
   font-size: 2.4rem;
-  /* display: flex; */
 }
 .sign-up-span1 {
   font-family: "Poppins-Regular";
-  /* font-weight: 700; */
   font-size: 1.3rem;
-  /* height: 5rem; */
   color: #666666;
   padding: 0.5rem;
 }
 .sign-up-forgot {
   text-decoration: none;
-  font-family: 'Poppins-Regular';
+  font-family: "Poppins-Regular";
   font-weight: 700;
   font-size: 1.3rem;
   color: #666666;
 }
 .sign-up-signup {
   text-decoration: none;
-  font-family: 'Poppins-Regular';
+  font-family: "Poppins-Regular";
   font-size: 1.3rem;
   color: #666666;
 }
@@ -102,7 +103,6 @@ label {
 }
 
 input {
-  /* border-radius: 2rem; */
   margin: 0.8rem;
   background-color: #e6e6e6;
   border-style: none;
@@ -110,4 +110,11 @@ input {
   text-align: center;
   border-radius: 2.5rem;
   outline: none;
+}
+.sign-up-img-container {
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  border: transparent;
 }

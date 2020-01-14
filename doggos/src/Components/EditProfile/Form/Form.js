@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
 
 const useStyles = makeStyles(theme => ({
   root: {
     "& > *": {
-      margin: theme.spacing(1),
-      // height: 100
+      margin: theme.spacing(1)
     }
   },
   input: {
@@ -16,8 +12,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Form({ addEvent , redirStaticProfile}) {
-
+function Form({ addEvent, redirStaticProfile }) {
   const classes = useStyles();
 
   const defaultState = {
@@ -43,10 +38,8 @@ function Form({ addEvent , redirStaticProfile}) {
   };
 
   return (
-    <form  className="profile-form">
-      <div>
-
-      </div>
+    <form className="profile-form">
+      <div></div>
       <div className="form-fields">
         <input
           className="username-input"
@@ -82,7 +75,6 @@ function Form({ addEvent , redirStaticProfile}) {
           value={state.description}
           onChange={handleChange}
         />
-
       </div>
       <div className="form-fields">
         <input
@@ -92,7 +84,6 @@ function Form({ addEvent , redirStaticProfile}) {
           className="sign-up-button"
         />
       </div>
-
     </form>
   );
 }

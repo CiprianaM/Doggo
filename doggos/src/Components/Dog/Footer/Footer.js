@@ -1,13 +1,10 @@
-import React from 'react';
-import DislikeButton from '../../Buttons/DislikeButton';
-import LikeButton from '../../Buttons/LikeButton';
+import React from "react";
+import DislikeButton from "../../Buttons/DislikeButton";
+import LikeButton from "../../Buttons/LikeButton";
 
-import './Footer.css';
-
-
+import "./Footer.css";
 
 export default function Footer(props) {
-
   return (
     <div className="footer">
       <DislikeButton passedFunc2={props.passedFunc}></DislikeButton>

@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import {useHistory, withRouter} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 import Form from "./Form/Form";
 import Logo from "../Logo/Logo";
-import logo from "./logo1.png";
+import NameLogo from "../Dog/NavBar/Logo/Logo";
 
 import "./SignIn.css";
 
-function SignIn({handleClick}) {
-  console.log('abc');
+function SignIn({ handleClick }) {
   function route(event) {
     // ApiClient.getOnePupper(event).then(() =>
-  
     // );
   }
 
@@ -26,11 +24,13 @@ function SignIn({handleClick}) {
     history.push("/signup");
   }
 
-
   return (
     <div className="sign-in-cont-background">
       <div className="sign-in-cont-unite">
-        <Logo></Logo>
+        <div className="sign-in-with-logo">
+          <NameLogo></NameLogo>
+          <Logo></Logo>
+        </div>
         <div className="sign-in-container">
           <div className="sign-in-h1">Member Login</div>
           <Form redirected={handleClick}></Form>
