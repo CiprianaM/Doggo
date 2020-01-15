@@ -12,21 +12,21 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Form({ addEvent, redirStaticProfile }) {
+function Form({  redirStaticProfile }) {
   const classes = useStyles();
 
   const defaultState = {
     username: "",
     email: "",
     password: "",
-    passConf: "",
+    confirmpass: "",
     description: ""
   };
   const [state, setState] = useState(defaultState);
 
   const handleSubmit = e => {
     e.preventDefault();
-    addEvent(state);
+    // addEvent(state);
     setState(defaultState);
   };
 
@@ -38,7 +38,7 @@ function Form({ addEvent, redirStaticProfile }) {
   };
 
   return (
-    <form className="profile-form">
+    <form className="profile-form" onSubmit={redirStaticProfile}>
       <div></div>
       <div className="form-fields">
         <input

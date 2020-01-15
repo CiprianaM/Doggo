@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import ClientApi from "../../ClientApi";
 import NavBar from "./NavBar/NavBar";
 import MainContainer from "./MainContainer/MainContainer";
@@ -11,8 +11,15 @@ import "./Dog.css";
 function Dog() {
   let history = useHistory();
 
+  const CurrentPupperId = () => {
+    let { id } = useParams();
+    return id;
+  };
+  const current = CurrentPupperId();
+  console.log(current);
+
   function profileClick() {
-    history.push("/profile");
+    history.push(`/profile/${current}`);
   }
   const printPuppers = async () => {
     const result = await ClientApi.getAllPuppers();

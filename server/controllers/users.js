@@ -19,13 +19,42 @@ exports.getAllCreated = async (req, res) => {
   res.json(users);
 };
 exports.getNewlyCreated = async (req, res) => {
-  const reqId = (req.params.id).slice(1,req.params.id.length);
-  console.log(reqId)
+  console.log(req.params, '----------------------------------------' )
     const user = await myExtendedUserModel.findOne({
-    where: { id: reqId }});
-  // console.log(req, res, user);
+    where: { id: req.params.id }});
+
   res.json(user);
-}
+};
+exports.updatePupperProfile = async (req, res) => {
+  const { id } = req.body;
+  Object.keys(req.body).forEach(key => req.body[key] === '' && delete req.body[key]);
+  // console.log(req.body);
+  // const user = req.body;
+  // const updatedUser = await this.getNewlyCreated(req, res);
+  // console.log(updatedUser, 'before obj assign');
+
+  // updatedUser = Object.assign(updatedUser,user);
+  // console.log(updatedUser, 'after obj assign');
+
+    try {
+      const updatedUser=  await myExtendedUserModel.update(
+          req.body,
+          { where: { id } ,
+          returning: true
+          },
+
+        )
+
+    // const retrieved = await this.getNewlyCreated(req,res);
+    console.log(updatedUser, 'response')
+    res.json(updatedUser);
+  } catch (err) {
+    res.send({ error: err})
+    res.status(500)
+  }
+};
+
+
 exports.deleteUser = async (req, res) => {
   console.log(req.params.id, "this is the req");
   await myUserModel.destroy({

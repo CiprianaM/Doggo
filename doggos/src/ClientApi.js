@@ -5,12 +5,21 @@ export default {
     return fetchRequest("/puppers");
   },
   getNewlyCreatedPupper: id => {
-    const newUrl ='/signup/:'+id;
+    const newUrl ='/profile/'+id;
+    console.log(newUrl);
     return fetchRequest(newUrl);
   },
   createPupper: data => {
     return fetchRequest("/signup", {
       method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" }
+    });
+  },
+  editPupper: (id, data) => {
+    const newUrl ='/profile/'+id;
+    return fetchRequest(newUrl, {
+      method: "PUT",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }
     });

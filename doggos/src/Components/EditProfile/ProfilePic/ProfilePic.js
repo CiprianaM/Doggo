@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function ProfilePic() {
+function ProfilePic({changePic}) {
   const classes = useStyles();
   return (
     <div className="profilePic-unite-container">

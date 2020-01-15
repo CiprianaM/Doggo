@@ -12,7 +12,6 @@ import "./SignUp.css";
 
 function SignUp() {
   let history = useHistory();
-  let id = 0;
   const defaultState = {
     photo: "",
     gender: "female",
@@ -31,7 +30,8 @@ function SignUp() {
     SetPupper({
       ...pupper,
       photo:
-        "https://images.dog.ceo/breeds/deerhound-scottish/n02092002_4131.jpg"
+        // "https://images.dog.ceo/breeds/deerhound-scottish/n02092002_4131.jpg"
+        "https://images.dog.ceo/breeds/australian-shepherd/sadie.jpg"
     });
   };
   const handleGender = event => {
@@ -43,27 +43,21 @@ function SignUp() {
   const handleForm = async partialPupper => {
     const data = Object.assign(pupper, partialPupper);
     await saveToDB(data);
-    SetPupper(data);
   };
   const saveToDB = async data => {
     const response = await ClientApi.createPupper(data);
     directToProfileSubmit(response.id); //make it asyncronous
-    console.log(response, "coming from response");
-    console.log(
-      await ClientApi.getNewlyCreatedPupper(response.id),
-      "this is coming from the get request"
-    );
+    // console.log(response, "coming from response");
+    // console.log(
+    //   await ClientApi.getNewlyCreatedPupper(response.id),
+    //   "this is coming from the get request"
+    // );
   };
 
   const directToProfileSubmit = id => {
     history.push(`/profile/${id}`);
   };
 
-  function insertPupper(event) {
-    ClientApi.createPupper(event).then(() =>
-      ClientApi.getAllPuppers().then(events => SetPupper(events))
-    );
-  }
   return (
     <div className="sign-up-cont-background">
 

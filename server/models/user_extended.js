@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) => {
   const User_extended = sequelize.define('User_extended', {
     username: DataTypes.STRING,
     password: DataTypes.STRING,
+    email: DataTypes.STRING,
     confirmpass: DataTypes.STRING,
     picture: DataTypes.STRING,
     gender: DataTypes.STRING,

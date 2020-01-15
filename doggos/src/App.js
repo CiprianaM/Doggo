@@ -26,13 +26,16 @@ export default function App() {
           <Route exact path="/">
             <SignIn />
           </Route>
-          <Route exact path="/dog">
+          <Route path="/dog/:id">
+            <Dog />
+          </Route>
+          <Route path="/dog">
             <Dog />
           </Route>
           <Route path="/profile/:id">
             <StaticProfile />
           </Route>
-          <Route exact path="/editprofile">
+          <Route exact path="/editprofile/:id">
             <EditProfile />
           </Route>
           <Route exact path="/reset">
