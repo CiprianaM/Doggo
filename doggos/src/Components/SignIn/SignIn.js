@@ -7,10 +7,6 @@ import NameLogo from "../Dog/NavBar/Logo/Logo";
 import "./SignIn.css";
 
 function SignIn({ handleClick }) {
-  function route(event) {
-    // ApiClient.getOnePupper(event).then(() =>
-    // );
-  }
 
   let history = useHistory();
 

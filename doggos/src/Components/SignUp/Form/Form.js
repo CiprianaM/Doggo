@@ -1,13 +1,4 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1)
-    }
-  }
-}));
 
 function Form({ addPupper, directProfSubmit }) {
   const defaultState = {
@@ -27,9 +18,6 @@ function Form({ addPupper, directProfSubmit }) {
   };
 
   const handleChange = e => {
-    // e.preventDefault();
-    // addPupper(state);
-    // setState(defaultState);
     setState({ ...state, [e.target.name]: e.target.value });
   };
 

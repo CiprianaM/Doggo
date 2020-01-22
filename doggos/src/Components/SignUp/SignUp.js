@@ -46,12 +46,7 @@ function SignUp() {
   };
   const saveToDB = async data => {
     const response = await ClientApi.createPupper(data);
-    directToProfileSubmit(response.id); //make it asyncronous
-    // console.log(response, "coming from response");
-    // console.log(
-    //   await ClientApi.getNewlyCreatedPupper(response.id),
-    //   "this is coming from the get request"
-    // );
+    directToProfileSubmit(response.id);
   };
 
   const directToProfileSubmit = id => {

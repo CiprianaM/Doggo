@@ -13,9 +13,6 @@ function ResetPassword() {
   }
 
   function insertEvent(event) {
-    // ApiClient.createEvent(event).then(() =>
-    //   ApiClient.getAllEvents().then(events => setEvents(events))
-    // );
   }
 
   return (

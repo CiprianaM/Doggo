@@ -16,7 +16,6 @@ function Dog() {
     return id;
   };
   const current = CurrentPupperId();
-  console.log(current);
 
   function profileClick() {
     history.push(`/profile/${current}`);

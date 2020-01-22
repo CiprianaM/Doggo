@@ -1,19 +1,6 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1)
-    }
-  },
-  input: {
-    display: "none"
-  }
-}));
 
 function Form({  redirStaticProfile }) {
-  const classes = useStyles();
 
   const defaultState = {
     username: "",

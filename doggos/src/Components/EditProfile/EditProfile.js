@@ -26,8 +26,7 @@ function EditProfile() {
     return id;
   };
   const current = CurrentPupperId();
-  // console.log(current);
-
+  
   const handlePic = e => {
     SetPupper({
       ...pupper,

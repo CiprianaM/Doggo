@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./ProfilePic.css";
-import Sadie from "../../Dog/Other/sadie.jpg";
 function ProfilePic({picToDisplay}) {
   console.log(picToDisplay)
   return (

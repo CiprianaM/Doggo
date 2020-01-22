@@ -1,5 +1,4 @@
 import React from "react";
-import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import ChatBubbleRoundedIcon from "@material-ui/icons/ChatBubbleRounded";
 import { makeStyles } from "@material-ui/core/styles";
 

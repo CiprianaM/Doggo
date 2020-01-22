@@ -13,7 +13,6 @@ const dogList =
       {
           "id": 3,
           "name": "Mopper",
-        //   "picture": "https://images.dog.ceo/breeds/komondor/n02105505_3564.jpg",
         "picture": "https://images.dog.ceo/breeds/stbernard/n02109525_7024.jpg",
           "description": "Young athletic male looking for fluffy girls who are passionate about ball chasing",
           "gender": "Good boy",
