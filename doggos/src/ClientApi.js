@@ -6,7 +6,6 @@ export default {
   },
   getNewlyCreatedPupper: id => {
     const newUrl ='/profile/'+id;
-    console.log(newUrl);
     return fetchRequest(newUrl);
   },
   createPupper: data => {

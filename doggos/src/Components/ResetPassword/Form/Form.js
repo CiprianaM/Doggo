@@ -66,7 +66,6 @@ function Form({ addEvent, handSI }) {
           value="SUBMIT"
           className="resetpass-button"
           onSubmit={handSI}
-          onSubmit={console.log("i got here")}
         />
       </div>
     </form>

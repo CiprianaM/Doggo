@@ -33,7 +33,7 @@ function StaticProfile() {
   let history = useHistory();
   const handleEditProfileClick = () => {
     history.push(`/editprofile/${current}`);
-    
+
   };
 
 

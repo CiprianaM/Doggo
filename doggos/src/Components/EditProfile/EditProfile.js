@@ -26,14 +26,13 @@ function EditProfile() {
     return id;
   };
   const current = CurrentPupperId();
-  
+
   const handlePic = e => {
     SetPupper({
       ...pupper,
       picture:
         "https://images.dog.ceo/breeds/deerhound-scottish/n02092002_4131.jpg"
     });
-    console.log(pupper.picture, 'this is the picture')
   };
 
 
